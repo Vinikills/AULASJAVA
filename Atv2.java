@@ -46,7 +46,7 @@ public class Atv2 {
 		quantidade = leia.nextInt();
 		
 		total = op * quantidade;
-		System.out.printf ("\nO total foi de: R$%.2f",total);
+		System.out.printf ("\nO total foi de: R$%.2f",total); 
 		}
 	}
 
