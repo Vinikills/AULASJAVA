@@ -8,18 +8,20 @@ public class ERROINJUSTIFICAVEL {
 		String palavra1,palavra2,palavra3;
 		
 		System.out.println("\nEntre com a primeira palavra: ");
-		palavra1 = ler.next();
+		palavra1 = new String (ler.next());
 		System.out.println("\nEntre com a segunda palavra: ");
-		palavra2 = ler.next();
+		palavra2 = new String (ler.next());
 		System.out.println("\nEntre com a terceira palavra: ");
-		palavra3 = ler.next();
+		palavra3 = new String (ler.next());
 		
-		
-		if(palavra1.equalsIgnoreCase("vertebrado"))
+
+		System.out.println(palavra1.getClass());
+		System.out.println("vertebrado".getClass());
+		if(palavra1 == "vertebrado") 
 		{
-			if(palavra2.equalsIgnoreCase( "ave"))
+			if(palavra2 == "ave")
 			{
-				if(palavra3.equalsIgnoreCase("carnivoro"))
+				if(palavra3 == "carnivoro")
 				{
 					System.out.println("\nÉ uma Águia");
 				}
